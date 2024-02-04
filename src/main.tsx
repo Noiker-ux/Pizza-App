@@ -8,6 +8,9 @@ import { Menu } from './pages/Menu/Menu.tsx';
 import { Error } from './pages/Error/Error.tsx';
 import { Layout } from './layouts/Menu/Layout.tsx';
 import { Product } from './pages/Product/Product.tsx';
+import { AuthLayout } from './layouts/Auth/AuthLayout.tsx';
+import { Register } from './pages/Register/Register.tsx';
+import { Login } from './pages/Login/Login.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -25,6 +28,20 @@ const router = createBrowserRouter([
 			{
 				path: '/product/:id',
 				element: <Product />
+			}
+		]
+	},
+	{
+		path: '/auth',
+		element: <AuthLayout />,
+		children: [
+			{
+				path: 'login',
+				element: <Login />
+			},
+			{
+				path: 'register',
+				element: <Register />
 			}
 		]
 	},
