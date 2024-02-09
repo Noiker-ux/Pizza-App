@@ -12,7 +12,7 @@ export function Layout() {
 	const navigate = useNavigate();
 	const dispatch = useDispatch<AppDispath>();
 	const profile = useSelector((s:RootState) => s.user.profile);
-
+	const items = useSelector((s:RootState) => s.card.items);
 
 	useEffect(() => {
 		dispatch(getProfile());
@@ -36,7 +36,7 @@ export function Layout() {
 						[styles.active]:isActive
 					})}>
 						<img src="./menuIcon.svg" alt="Иконка меню" />
-						Меню
+						Меню {items.reduce((acc, i ) => acc+=i.count ,0)}
 					</NavLink>
 					<NavLink to="/cart" className={({ isActive }) => classNames(styles['link'], {
 						[styles.active]:isActive
