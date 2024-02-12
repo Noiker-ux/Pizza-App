@@ -36,13 +36,13 @@ export function Layout() {
 						[styles.active]:isActive
 					})}>
 						<img src="./menuIcon.svg" alt="Иконка меню" />
-						Меню {items.reduce((acc, i ) => acc+=i.count ,0)}
+						Меню 
 					</NavLink>
 					<NavLink to="/cart" className={({ isActive }) => classNames(styles['link'], {
 						[styles.active]:isActive
 					})}>
 						<img src="./cartIcon.svg" alt="Иконка корзины" />
-						Корзина
+						Корзина <span className={styles['cartCount']}>{items.reduce((acc, i ) => acc+=i.count ,0)}</span>
 					</NavLink>
 				</div>
 				<Button className={styles['exit']} onClick={logout}>

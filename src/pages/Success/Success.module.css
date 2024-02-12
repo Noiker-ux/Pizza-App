@@ -1,0 +1,13 @@
+.success{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.text{
+    font-weight: 300;
+    font-size: 31px;
+    text-align: center;
+    color: var(--text-color); 
+}

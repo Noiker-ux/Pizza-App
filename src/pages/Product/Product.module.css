@@ -1,4 +1,101 @@
-.head{
+.header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+.title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: var(--text-color);
+}
+.back{
+    background-color: #fffbfb;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.add{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.detail{
+    margin-top: 41px;
+    display: flex;
+    gap: 48px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.image{
+    border-radius: 15px;
+    width: 323px;
+    height: 248px;
+    object-fit: cover;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.price{
+    font-weight: 400;
+    font-size: 19px;
+    text-align: right;
+    color: var(--text-color);
+}
+
+.price span {
+    color: var(--separator-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.hr{
+    margin: 0;
+    border: 1px solid #f1f2f3;
+}
+.priceAround{
+    background-color: var(--white-color);
+    box-shadow: 0 6px 24px 0 rgba(254, 114, 76, 0.2);
+    border-radius: 20px;
+    padding: 3px 7px;
+}
+.item-ingidient{
+    font-weight: 400;
+    font-size: 14px;
+    color: #5b5b5e;
+    text-transform: capitalize;
+    padding: 0;
+}
+.ingridients-title{
+    font-weight: 600;
+    font-size: 14px;
+    color: #5b5b5e;
+}
+.list-ingidients{
+    padding: 0;
+    margin: 10px 0 0 18px;
 }
